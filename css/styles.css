@@ -5,7 +5,8 @@
     --ocean-color: #404bbf;
     --cloud-color: #F4F4FD;
     --background-color: #FFFFFFFF;
-    --slate-color : #434455;
+    --slate-color: #434455;
+    --cornflower-color: #E7E9FC;
         }
 /*Global Styles*/
 body {
@@ -18,9 +19,30 @@ body {
   }
   .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .container {
+    width: 1200px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .visually-hidden {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .section {
+    padding-top: 94px ;
+    padding-bottom: 94px;
   }
 /*Classes*/
 /*Link Clases*/
+/*Studio Header*/
 .navbar-studio {
     text-decoration: none;
     font-family: Roboto;
@@ -33,6 +55,13 @@ body {
 .navbar-studio:hover, .navbar-studio:focus{
     color: var(--ocean-color);
 }
+
+.navbar-studio-child {
+display: flex;
+flex-direction: row;
+gap: 40px;
+margin: 0;
+}
 .logo-header {
     text-decoration: none;
     font-family: 'Raleway',sans-serif;
@@ -42,6 +71,9 @@ body {
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    width: 44px;
+
+
 }
 .logo-header:hover, .logo-header:focus {
     color: var(--ocean-color);
@@ -55,9 +87,47 @@ body {
     line-height: 1.17; /* 116.667% */
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    width: 71px;
+
 }
+.header-parent {
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    border-bottom: 1px solid var(--cornflower-color);
+}
+.address-list {
+    font-style: normal; 
+    display: flex;
+    flex-direction: row;
+    gap: 40;
+    }
+.address-contacts {
+    text-decoration: none;
+    color: var(--slate-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    font-style: normal;
+}
+.address-contacts:hover, .address-contacts:focus {
+    color: var(--ocean-color);
+}
+.address-items {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 40px;
+}
+/*Studio Footer*/
 .general-footer {
 background-color: var(--navy-color);
+width: 1440px;
+padding: 156px 100px 1020px 100px;
+flex-shrink: 0;
 }
 .logo-of-footer {
     text-decoration: none;
@@ -78,37 +148,166 @@ font-weight: 800;
 line-height: 1.16;
 letter-spacing: 0.54px;
 text-transform: uppercase;
+width: 71px;
 }
-.address-list {
-    font-style: normal; 
-}
-.address-contacts {
-    text-decoration: none;
-    color: var(--slate-color);
+.footer-paragraph {
+    color: #F4F4FD;
     font-weight: 400;
     font-size: 16px;
+    font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    font-style: normal;
-}
-.address-contacts:hover, .address-contacts:focus {
-    color: var(--ocean-color);
+    background-color: var(--navy-color);
+    width: 264px;
+    }
+.footer-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 /*Buttons*/
 /*Index buttons*/
-.order-service-button {
-    background-color: var(--iris-color);
-    color:var(--white-color);
-    font-weight: 500;
-    font-size: 16px;
-    font-family:'Roboto',sans-serif;
-    line-height: 1.5;
-    letter-spacing: 0.64px;
+
+
+/* Titles Styles*/
+.hero-section-title {
+    background-color:var(--navy-color);
+    color: var(--white-color);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 1.12px;
+    max-width: 496px;
+    display:flex;
+    align-items: center;
+
     }
-.order-service-button:hover, .order-service-button:focus{
-color: var(--white-color);
-background-color: var(--ocean-color);
-cursor: pointer;
+    .order-service-button {
+        background-color: var(--iris-color);
+        color:var(--white-color);
+        font-weight: 500;
+        font-size: 16px;
+        font-family:'Roboto',sans-serif;
+        line-height: 1.5;
+        letter-spacing: 0.64px;
+        }
+    .order-service-button:hover, .order-service-button:focus{
+    color: var(--white-color);
+    background-color: var(--ocean-color);
+    cursor: pointer;
+    }
+
+/* Section One Hero Section*/
+.section-one {
+    background-color: var(--navy-color);
+    display: flex;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 16px 32px;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    width: 1440px;
+    flex-shrink: 0;
+}
+
+/* Section Two-Strategy-Punctuality...*/
+.section-two-parent {
+    width: 1440px;
+    flex-shrink: 0;
+}
+.section-two-titles {
+    color: var(--navy-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    font-style: normal;
+}
+.section-two-list {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 24px;
+}
+.section-two-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+    /*What are we doing */
+    .three-section-title {
+        font-weight: 700;
+        font-size: 36px;
+        color:var(--navy-color);
+        line-height: 1.11;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+    } 
+    .section-three-parent {
+        width: 1440px;
+        height: 2592px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+       }
+/*Our Team Title*/
+
+.four-section-title {
+    text-align: center;
+    color: var(--navy-color);
+    font-weight: 700;
+    font-size: 36px;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    background-color: var(--background-color);
+}.section-four-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1440px;
+    height: 2592px;
+}
+.section-four-our-team {
+    background-color: var(--cloud-color);
+    width: 1440px;
+    height: 2592px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-four-element {
+    background-color: var(--background-color);
+}
+.four-section-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.our-team-names {
+    color: var(--navy-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    background-color: var(--background-color);
+}
+.our-team-img {
+    background-color: var(--background-color);
+    display: inline-flex;
+    padding-bottom: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 /* Portfolio buttons*/
 .all-filter-button {
@@ -125,78 +324,14 @@ cursor: pointer;
     color: var(--white-color);
     cursor: pointer;
     background-color: var(--ocean-color);
+}.section-buttons {
+    width: 1440px;
+    height: 2076px;
 }
-.all-fb {
-    color: var(--iris-color);
-    background-color: var(--cloud-color);
-}
-.links-portfolio {
- text-decoration: none;
- color: var(--navy-color);
- font-weight: 500;
- font-size: 20px;
-}
-.links-portfolio:hover, .links-portfolio:focus {
-    color: var(--ocean-color);
-}
-/* Titles Styles*/
-.hero-section-title {
-    background-color:var(--navy-color);
-    color: var(--white-color);
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 1.12px;
-    }
-    /*What are we doing */
-.three-section-title {
-    font-weight: 700;
-    font-size: 36px;
-    color:var(--navy-color);
-    line-height: 1.11;
-    letter-spacing: 0.72px;
-    text-transform: capitalize;
-    text-align: center;
-} 
-.section-one {
-    background-color: var(--navy-color);
-}
-/* Strategy-Punctuality...*/
-.section-two-titles {
-    color: var(--navy-color);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.4px;
-    font-style: normal;
-}
-/*Our Team Title*/
-.four-section-title {
-    text-align: center;
-    color: var(--navy-color);
-    font-weight: 700;
-    font-size: 36px;
-    font-style: normal;
-    line-height: 1.11;
-    letter-spacing: 0.72px;
-    text-transform: capitalize;
-    background-color: var(--background-color);
-}
-.section-four-element {
-    background-color: var(--background-color);
-}
-
-.our-team-names {
-    color: var(--navy-color);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.4px;
-    background-color: var(--background-color);
-}
-.our-team-img {
-    background-color: var(--background-color);
+.button-items {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 24px;
 }
 .portfolio-titles {
     font-size: 20px;
@@ -207,15 +342,7 @@ cursor: pointer;
     color: var(--navy-color);
 }
 /*Paragraph Syles*/
-.footer-paragraph {
-    color: #F4F4FD;
-    font-weight: 400;
-    font-size: 16px;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-    background-color: var(--navy-color);
-}
+
 .section-two-index-paragraph {
     font-weight: 400;
     font-style: normal;
@@ -231,6 +358,23 @@ cursor: pointer;
     letter-spacing: 0.32px;
     color: var(--slate-color);
 }
-.section-four-our-team {
-    background-color: var(--cloud-color);
+.grid-cards {
+    display: flex;
+    flex-wrap: wrap;
+    --card-width: 360px;
+    max-width: calc(var(--card-width)*3+ 24px);
+    gap: 24px;
+
+}
+.grid-card {
+    width: 360px;
+    height: 420px;
+    width: var(--card-width);
+    display: flex;
+    padding-bottom: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32;
+    flex-shrink: 0;
+    border: 1px solid var(--cornflower-color);
 }
