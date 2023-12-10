@@ -12,10 +12,11 @@
     </head>
     <body>
          <!--Antetul paginii-Top Line-->
-         <div class="header-parent">
-            <header class="container">
+         
+            <header class="header-parent">
+                <div class="header-div container">
                 <!--Navbar Section-->
-                <nav class="list">
+                <nav class="list navbar-links">
                 <a href="./index.html" class="link logo-header">Web<span class="logo-studio">Studio</span></a>
                     <ul class="list navbar-studio-child">
                         <li><a href="./index.html" class="link navbar-studio">Studio</a></li>
@@ -38,71 +39,84 @@
             <!--Continutul unic al paginii-->
             <main>
                 <!--Hero Section -Section 1-->
-                <section class="section-one container section">
+                <div class="container">
+                <section class="section-one section">
                     <h1 class="hero-section-title">Effective Solutions for Your Business</h1>
                     <button type="button" class="order-service-button">Order Service</button>
                 </section>
+                </div>
                 <!--Section 2 Strategy-Punctuality-Diligence-Technologies-->
-                <section class="list container section">
-                    <h2  class="visually-hidden">Strategy-Punctuality-Diligence-Technologies</h2>
-                    <ul class="list section-two-list">
-                        <li>
-                            <h3 class="section-two-titles">Strategy</h3>
-                            <p class="section-two-index-paragraph">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+                <div class="container">
+                    <section class="list section section-two-parent">
+                        <h2  class="visually-hidden">Strategy-Punctuality-Diligence-Technologies</h2>
+                        <ul class="list section-two-list">
+                            <li class="section-two-list-card">
+                                <h3 class="section-two-titles">Strategy</h3>
+                                <p class="section-four-index-paragraph-paragraph">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+                            </li>
+                            <li class="section-two-list-card">
+                                <h3 class="section-two-titles">Punctuality</h3>
+                                <p class="section-four-index-paragraph-paragraph">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+                            </li>
+                        <li class="section-two-list-card">
+                            <h3 class="section-two-titles">Diligence</h3>
+                            <p class="section-four-index-paragraph-paragraph">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
                         </li>
-                        <li>
-                            <h3 class="section-two-titles">Punctuality</h3>
-                            <p class="section-two-index-paragraph">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
-                        </li>
-                       <li>
-                        <h3 class="section-two-titles">Diligence</h3>
-                        <p class="section-two-index-paragraph">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
-                       </li>
-                        <li>
-                            <h3 class="section-two-titles">Technologies</h3>
-                            <p class="section-two-index-paragraph">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
-                        </li>                       
-                    </ul>
-                </section>
-                
+                            <li class="section-two-list-card">
+                                <h3 class="section-two-titles">Technologies</h3>
+                                <p class="section-four-index-paragraph-paragraph">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+                            </li>                       
+                        </ul>
+                    </section>
+                </div>
                   <!--Section 3-What Are We Doing-->
-                  <section class="list container section section-three-parent">
+                  <div class="container">
+                  <section class="list section section-three-parent">
                     <h2 class="three-section-title">What are we doing</h2>
                     <!--What Are We Doing Images-->                
-                        <ul class="list section-two-cards">
-                        <li><img src="./images/image1.jpg" alt="PC Desktop" width="360"></li>
-                        <li><img src="./images/image2.jpg" alt="Multiplied Display's Phone" width="360"></li>
-                        <li><img src="./images/image3.jpg" alt="A Laptop and Smartphone" width="360"></li>
+                        <ul class="list section-three-cards">
+                        <li class="section-three-card"><img src="./images/image1.jpg" alt="PC Desktop" width="360"></li>
+                        <li class="section-three-card"><img src="./images/image2.jpg" alt="Multiplied Display's Phone" width="360"></li>
+                        <li class="section-three-card"><img src="./images/image3.jpg" alt="A Laptop and Smartphone" width="360"></li>
                         </ul>
                   </section>
+                </div>
                   <!--Section 4-Our Team-->
-                  <div class="section-four-parent">
+                  <div class="container">
                   <section class="list section-four-our-team container section">
                   <h2 class="four-section-title">Our Team</h2>
                         <ul class="list four-section-cards">
                        <li class="our-team-img"><img src="./images/mark-guerrero.jpg" alt="Mark Guerrero Product Designer" width="264">
-                            <h3 class="our-team-names">Mark Guerrero</h3>
-                            <p class="section-two-index-paragraph">Product Designer</p>
-                        </li>                    
+                          <div class="section-four-card">  
+                        <h3 class="our-team-names">Mark Guerrero</h3>
+                            <p class="section-four-index-paragraph">Product Designer</p>
+                        </div>
+                        </li>               
                         <li class="our-team-img"><img src="./images/tom-ford.jpg" alt="Tom Ford Frontend Developer" width="264">
+                            <div class="section-four-card">  
                             <h3 class="our-team-names">Tom Ford</h3>
-                            <p class="section-two-index-paragraph">Frontend Developer</p>
+                            <p class="section-four-index-paragraph">Frontend Developer</p>
+                        </div>
                         </li>                       
                         <li class="our-team-img"><img src="./images/camila-garcia.jpg" alt="Camila Garcia Marketing" width="264">
+                            <div class="section-four-card">
                             <h3 class="our-team-names">Camila Garcia</h3>
-                            <p class="section-two-index-paragraph">Marketing</p>
+                            <p class="section-four-index-paragraph">Marketing</p>
+                            </div>
                         </li>
                         <li class="our-team-img"><img src="./images/daniel-wilson.jpg" alt="Daniel Wilson UI Designer" width="264">
+                            <div class="section-four-card">
                             <h3 class="our-team-names">Daniel Wilson</h3>
-                            <p class="section-two-index-paragraph">UI Designer</p>   
+                            <p class="section-four-index-paragraph">UI Designer</p> 
+                            </div>  
                         </li>                        
                         </ul>
                     </section>
                 </div>
             </main>
             <!--Subsolul Paginii-->
-            <div class="footer-cards">
-            <footer class="general-footer container">
+            <div class="container">
+            <footer class="general-footer">
                 <a href="./index.html" class="logo-of-footer link">Web<span class="studio-span">Studio</span></a>
                 <p class="footer-paragraph">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
             </footer>

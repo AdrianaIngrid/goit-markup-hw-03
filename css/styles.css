@@ -34,11 +34,20 @@ body {
     left: -10000px;
     width: 1px;
     height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip:rect(0 0 0 0)
     overflow: hidden;
   }
   .section {
     padding-top: 94px ;
     padding-bottom: 94px;
+  }
+  img {
+    display: block;
   }
 /*Classes*/
 /*Link Clases*/
@@ -62,6 +71,12 @@ flex-direction: row;
 gap: 40px;
 margin: 0;
 }
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
 .logo-header {
     text-decoration: none;
     font-family: 'Raleway',sans-serif;
@@ -72,7 +87,7 @@ margin: 0;
     letter-spacing: 0.54px;
     text-transform: uppercase;
     width: 44px;
-
+    margin-left: 76px;
 
 }
 .logo-header:hover, .logo-header:focus {
@@ -92,11 +107,17 @@ margin: 0;
 }
 .header-parent {
     width: 1440px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background-color: var(--white-color);
     border-bottom: 1px solid var(--cornflower-color);
+}
+.header-div {
+    display: flex;
+    width: 1158px;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0px;
 }
 .address-list {
     font-style: normal; 
@@ -126,8 +147,7 @@ margin: 0;
 .general-footer {
 background-color: var(--navy-color);
 width: 1440px;
-padding: 156px 100px 1020px 100px;
-flex-shrink: 0;
+padding: 100px 0px;
 }
 .logo-of-footer {
     text-decoration: none;
@@ -139,6 +159,8 @@ flex-shrink: 0;
     line-height: 1.17;
     text-transform: uppercase;
     background-color: var(--navy-color);
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .studio-span {
 color: var(--cloud-color);
@@ -158,13 +180,8 @@ width: 71px;
     line-height: 1.5;
     letter-spacing: 0.32px;
     background-color: var(--navy-color);
-    width: 264px;
+    max-width: 264px;
     }
-.footer-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 /*Buttons*/
 /*Index buttons*/
 
@@ -191,6 +208,12 @@ width: 71px;
         font-family:'Roboto',sans-serif;
         line-height: 1.5;
         letter-spacing: 0.64px;
+        display: block;
+        min-width: 169px;
+        height: 56px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
         }
     .order-service-button:hover, .order-service-button:focus{
     color: var(--white-color);
@@ -204,7 +227,7 @@ width: 71px;
     display: flex;
     display: inline-flex;
     flex-direction: column;
-    padding: 16px 32px;
+    padding: 188px 0px;
     align-items: center;
     gap: 10px;
     justify-content: center;
@@ -215,7 +238,7 @@ width: 71px;
 /* Section Two-Strategy-Punctuality...*/
 .section-two-parent {
     width: 1440px;
-    flex-shrink: 0;
+    padding: 120px 0;
 }
 .section-two-titles {
     color: var(--navy-color);
@@ -224,35 +247,44 @@ width: 71px;
     line-height: 1.2;
     letter-spacing: 0.4px;
     font-style: normal;
+    margin-bottom: 8px;
 }
 .section-two-list {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    gap: 24px;
-}
-.section-two-cards {
     display: flex;
     flex-direction: row;
     gap: 24px;
 }
 
+.section-two-list-card {
+width: calc(100%-24*3/4);
+}
     /*What are we doing */
-    .three-section-title {
-        font-weight: 700;
-        font-size: 36px;
-        color:var(--navy-color);
-        line-height: 1.11;
-        letter-spacing: 0.72px;
-        text-transform: capitalize;
-    } 
+.three-section-title {
+    font-weight: 700;
+    font-size: 36px;
+    color:var(--navy-color);
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    margin-bottom: 72;
+} 
     .section-three-parent {
         width: 1440px;
-        height: 2592px;
+        padding-bottom: 120px;
         display: inline-flex;
         flex-direction: column;
         align-items: center;
        }
+       .section-three-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+    .section-three-card {
+        --card width: 360px;
+        max-width: calc(100%-48/3);
+        /*((100%-48)/3);*/
+    }
 /*Our Team Title*/
 
 .four-section-title {
@@ -265,6 +297,7 @@ width: 71px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
     background-color: var(--background-color);
+    margin-bottom: 72px;
 }.section-four-parent {
     display: flex;
     flex-direction: row;
@@ -274,11 +307,8 @@ width: 71px;
 }
 .section-four-our-team {
     background-color: var(--cloud-color);
-    width: 1440px;
-    height: 2592px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .section-four-element {
     background-color: var(--background-color);
@@ -289,6 +319,10 @@ width: 71px;
     align-items: center;
     gap: 24px;
 }
+.section-four-card {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
 .our-team-names {
     color: var(--navy-color);
@@ -297,17 +331,13 @@ width: 71px;
     line-height: 1.2;
     letter-spacing: 0.4px;
     background-color: var(--background-color);
+    text-align: center;
+    margin-bottom: 8px;
 }
 .our-team-img {
     background-color: var(--background-color);
-    display: inline-flex;
-    padding-bottom: 32px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
     border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    
 }
 /* Portfolio buttons*/
 .all-filter-button {
@@ -319,19 +349,26 @@ width: 71px;
     text-align: center;
     line-height: 1.5;
     letter-spacing: 0.64px;
+    padding: 12px 24px;
+    border-radius: 4px var(--cornflower-color);
+    border: 1px solid;
    }
 .all-filter-button:hover, .all-filter-button:focus {
     color: var(--white-color);
     cursor: pointer;
     background-color: var(--ocean-color);
-}.section-buttons {
+    border: 1px transparent;
+}.section-main {
     width: 1440px;
-    height: 2076px;
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 .button-items {
-    display: inline-flex;
-    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     gap: 24px;
+    margin-bottom: 72px;
 }
 .portfolio-titles {
     font-size: 20px;
@@ -340,15 +377,17 @@ width: 71px;
     line-height: 1.2;
     letter-spacing: 0.4px;
     color: var(--navy-color);
+    margin-bottom: 8px;
 }
 /*Paragraph Syles*/
 
-.section-two-index-paragraph {
+.section-four-index-paragraph {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    text-align: center;
 }
 .portfolio-pharagraphs {
     font-size: 16px;
@@ -360,16 +399,16 @@ width: 71px;
 }
 .grid-cards {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    --card-width: 360px;
-    max-width: calc(var(--card-width)*3+ 24px);
-    gap: 24px;
+    max-width: calc((100%-48px)/3);
+    column-gap: 24px;
+    row-gap: 48px;
 
 }
 .grid-card {
     width: 360px;
     height: 420px;
-    width: var(--card-width);
     display: flex;
     padding-bottom: 32px;
     flex-direction: column;
@@ -377,4 +416,12 @@ width: 71px;
     gap: 32;
     flex-shrink: 0;
     border: 1px solid var(--cornflower-color);
+}
+.grid-div {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid var(--cornflower-color);
+    border-top: none;
 }
