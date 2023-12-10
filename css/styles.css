@@ -70,6 +70,8 @@ display: flex;
 flex-direction: row;
 gap: 40px;
 margin: 0;
+padding-top: 24px;
+padding-bottom: 24px;
 }
 .navbar-links {
     display: flex;
@@ -88,6 +90,7 @@ margin: 0;
     text-transform: uppercase;
     width: 44px;
     margin-left: 76px;
+    margin-right: 76px;
 
 }
 .logo-header:hover, .logo-header:focus {
@@ -121,9 +124,6 @@ margin: 0;
 }
 .address-list {
     font-style: normal; 
-    display: flex;
-    flex-direction: row;
-    gap: 40;
     }
 .address-contacts {
     text-decoration: none;
@@ -140,7 +140,6 @@ margin: 0;
 .address-items {
     display: flex;
     flex-direction: row;
-    align-items: end;
     gap: 40px;
 }
 /*Studio Footer*/
