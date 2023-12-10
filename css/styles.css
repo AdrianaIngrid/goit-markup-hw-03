@@ -39,7 +39,7 @@ body {
     padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
-    clip:rect(0 0 0 0)
+    clip: rect(0 0 0 0);
     overflow: hidden;
   }
   .section {
@@ -91,6 +91,7 @@ padding-bottom: 24px;
     width: 44px;
     margin-left: 76px;
     margin-right: 76px;
+    padding: 24px 0px;
 
 }
 .logo-header:hover, .logo-header:focus {
@@ -192,12 +193,8 @@ width: 71px;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 1.12px;
     max-width: 496px;
-    display:flex;
-    align-items: center;
-
     }
     .order-service-button {
         background-color: var(--iris-color);
@@ -217,7 +214,6 @@ width: 71px;
     .order-service-button:hover, .order-service-button:focus{
     color: var(--white-color);
     background-color: var(--ocean-color);
-    cursor: pointer;
     }
 
 /* Section One Hero Section*/
@@ -399,11 +395,9 @@ width: calc(100%-24*3/4);
 .grid-cards {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    max-width: calc((100%-48px)/3);
+    flex-wrap: wrap;   
     column-gap: 24px;
     row-gap: 48px;
-
 }
 .grid-card {
     width: 360px;
@@ -415,6 +409,7 @@ width: calc(100%-24*3/4);
     gap: 32;
     flex-shrink: 0;
     border: 1px solid var(--cornflower-color);
+    width: calc((100%-48px)/3);
 }
 .grid-div {
     padding: 32px 16px;
