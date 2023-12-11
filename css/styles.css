@@ -92,7 +92,8 @@ margin: 0;
     margin-left: 76px;
     margin-right: 76px;
     padding: 24px 0;
-
+  
+ 
 }
 .logo-header:hover, .logo-header:focus {
     color: var(--ocean-color);
