@@ -24,7 +24,7 @@ body {
     margin: 0;
   }
   .container {
-    width: 1200px;
+    width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -113,19 +113,12 @@ margin: 0;
 
 }
 .header-parent {
-    width: 1440px;
-    background-color: var(--white-color);
     border-bottom: 1px solid var(--cornflower-color);
 }
 .header-div {
     display: flex;
-    width: 1158px;
-    margin: 0 auto;
-    padding-top: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 0px;
-}
+    justify-content: space-between;
+   }
 .address-list {
     font-style: normal;
         }
