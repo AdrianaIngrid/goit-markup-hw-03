@@ -210,6 +210,7 @@ width: 71px;
         border: none;
         cursor: pointer;
         border-radius: 4px;
+        margin: 0 auto;
         }
     .order-service-button:hover, .order-service-button:focus{
     color: var(--white-color);
@@ -219,17 +220,12 @@ width: 71px;
 /* Section One Hero Section*/
 .section-one {
     background-color: var(--navy-color);
-    display: flex;
-    display: inline-flex;
-    flex-direction: column;
-    padding: 188px 0;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
-    width: 1440px;
-    flex-shrink: 0;
+    color:var(--white-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
+    flex-grow: 1;
 }
-
 /* Section Two-Strategy-Punctuality...*/
 .section-two-parent {
     width: 1440px;
@@ -262,6 +258,7 @@ width: 71px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
     margin-bottom: 72px;
+    text-align: center;
 } 
     .section-three-parent {
         width: 1440px;
@@ -291,7 +288,6 @@ width: 71px;
     line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-    background-color: var(--background-color);
     margin-bottom: 72px;
 }.section-four-parent {
     display: flex;
