@@ -2,7 +2,7 @@
     --white-color: #FFFFFF;
     --navy-color: #2E2F42;
     --iris-color: #4D5AE5;
-    --ocean-color: #404bbf;
+    --ocean-color: #404BBF;
     --cloud-color: #F4F4FD;
     --background-color: #FFFFFFFF;
     --slate-color: #434455;
@@ -41,7 +41,6 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-  
   img {
     display: block;
   }
@@ -60,20 +59,17 @@ body {
 .navbar-studio:hover, .navbar-studio:focus{
     color: var(--ocean-color);
 }
-
 .navbar-studio-child {
 display: flex;
 flex-direction: row;
 gap: 40px;
 margin: 0;
-
 }
 .navbar-links {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 40px;
-   
 }
 .logo-header {
     text-decoration: none;
@@ -87,11 +83,9 @@ margin: 0;
     width: 44px;
     margin-left: 76px;
     margin-right: 76px;
-   
-  
- 
 }
-.logo-header:hover, .logo-header:focus {
+.logo-header:hover,
+.logo-header:focus {
     color: var(--ocean-color);
 }
 .header-link {
@@ -107,7 +101,6 @@ margin: 0;
     letter-spacing: 0.54px;
     text-transform: uppercase;
     width: 71px;
-
 }
 .header-parent {
     border-bottom: 1px solid var(--cornflower-color);
@@ -129,7 +122,8 @@ margin: 0;
     font-style: normal;
     padding: 24px 0;
 }
-.address-contacts:hover, .address-contacts:focus {
+.address-contacts:hover,
+.address-contacts:focus {
     color: var(--ocean-color);
 }
 .address-items {
@@ -141,7 +135,6 @@ margin: 0;
 /*Studio Footer*/
 .general-footer {
 background-color: var(--navy-color);
-width: 1440px;
 padding: 100px 0px;
 }
 .logo-of-footer {
@@ -179,8 +172,6 @@ width: 71px;
     }
 /*Buttons*/
 /*Index buttons*/
-
-
 /* Titles Styles*/
 .hero-section-title {
     background-color:var(--navy-color);
@@ -191,7 +182,8 @@ width: 71px;
     letter-spacing: 1.12px;
     max-width: 496px;
     text-align: center;
-    margin-bottom: 0 auto;
+    margin: 0 auto;
+    margin-bottom: 48px;
     }
     .order-service-button {
         background-color: var(--iris-color);
@@ -209,11 +201,11 @@ width: 71px;
         border-radius: 4px;
         margin: 0 auto;
         }
-    .order-service-button:hover, .order-service-button:focus{
+    .order-service-button:hover,
+    .order-service-button:focus{
     color: var(--white-color);
     background-color: var(--ocean-color);
     }
-
 /* Section One Hero Section*/
 .section-one {
     background-color: var(--navy-color);
@@ -225,7 +217,6 @@ width: 71px;
 }
 /* Section Two-Strategy-Punctuality...*/
 .section-two-parent {
-    width: 1440px;
     padding: 120px 0;
 }
 .section-two-titles {
@@ -242,7 +233,6 @@ width: 71px;
     flex-direction: row;
     gap: 24px;
 }
-
 .section-two-list-card {
     width: calc((100%-72px)/4);
 }
@@ -256,11 +246,10 @@ width: 71px;
     text-transform: capitalize;
     margin-bottom: 72px;
     text-align: center;
-} 
+}
     .section-three-parent {
-        width: 1440px;
         padding-bottom: 120px;
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
        }
@@ -275,7 +264,6 @@ width: 71px;
         /*((100%-48)/3);*/
     }
 /*Our Team Title*/
-
 .four-section-title {
     text-align: center;
     color: var(--navy-color);
@@ -310,7 +298,6 @@ width: 71px;
     padding-top: 32px;
     padding-bottom: 32px;
 }
-
 .our-team-names {
     color: var(--navy-color);
     font-weight: 500;
@@ -324,7 +311,6 @@ width: 71px;
 .our-team-img {
     background-color: var(--background-color);
     border-radius: 0px 0px 4px 4px;
-    
 }
 /* Portfolio buttons*/
 .all-filter-button {
@@ -346,7 +332,6 @@ width: 71px;
     background-color: var(--ocean-color);
     border: 1px solid transparent;
 }.section-main {
-    width: 1440px;
     padding-top: 96px;
     padding-bottom: 120px;
 }
@@ -367,7 +352,6 @@ width: 71px;
     margin-bottom: 8px;
 }
 /*Paragraph Syles*/
-
 .section-four-index-paragraph {
     font-weight: 400;
     font-style: normal;
@@ -386,12 +370,12 @@ width: 71px;
 }
 .grid-cards {
     display: flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
 }
-.grid-card {  
-    flex-basis: calc((100%-48px)/3);    
+.grid-card {
+    flex-basis: calc((100%-48px)/3);
 }
 .grid-div {
     padding: 32px 16px;
