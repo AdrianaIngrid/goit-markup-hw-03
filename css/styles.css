@@ -78,11 +78,10 @@ margin: 0;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    letter-spacing: 0.54px;
     text-transform: uppercase;
     width: 44px;
-    margin-left: 76px;
     margin-right: 76px;
+    letter-spacing: 0.03em;
 }
 .logo-header:hover,
 .logo-header:focus {
